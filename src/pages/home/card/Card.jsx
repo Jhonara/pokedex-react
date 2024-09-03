@@ -26,10 +26,11 @@ export const Card = ({card}) => {
       setEspeciePokemon(api.data)
       
     }
-    dataEspecie();
+    dataEspecie(); 
   }, [])
   
-  console.log(itemPokemon?.stats); 
+  // console.log(itemPokemon?.stats); 
+  console.log("texto\ttexto\ttexto\t"); 
 
   return (
     <div className={css.card} >
@@ -40,13 +41,19 @@ export const Card = ({card}) => {
           <h4 className={css.altura_poke}>10cm</h4>
           <h4 className={css.peso_poke}>peso</h4>
           <h4 className={css.habitat_poke}>Habitat</h4>
-        </div>
-        <div>
+          <div className={css.div_stats}> 
           {itemPokemon?.stats?.map((sta, index) => {
-            return( <h6></h6>
-            )            
+            return <h6 key={index}> 
+          <span>{sta?.stat?.name} </span>
+          <progress value={sta?.base_stat} max={110}>
+
+          </progress>
+          <span>{sta?.base_stat} </span>
+
+            </h6>;
           })}          
         </div>
+        </div>        
     </div>
   )
 }
