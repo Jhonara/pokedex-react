@@ -1,0 +1,19 @@
+.header{
+    background-color: #d1cfcf;
+    .div_header{        
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        width: auto;
+        max-width: calc(100% - 30px);
+        margin: 0 auto;
+
+
+        .div_logo{
+            > img {
+                width: 12rem;
+            }
+        }
+    }
+}
