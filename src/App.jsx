@@ -9,6 +9,7 @@ function App() {
   return (
     <div>
       <LayoutHome /> 
+      <p>Jhonatan Ramirez Useche</p>
     </div>
   )
 }
