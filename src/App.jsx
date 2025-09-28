@@ -8,8 +8,9 @@ function App() {
 
   return (
     <div>
+       <p>Jhonatan Ramirez Useche</p>
       <LayoutHome /> 
-      <p>Jhonatan Ramirez Useche</p>
+     
     </div>
   )
 }
